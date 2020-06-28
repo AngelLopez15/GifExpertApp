@@ -9,11 +9,11 @@ export const GifGrid = ({category}) => {
 
     return (
         <Fragment>
-            <h3>{category}</h3>
+            <h3 className="animate__animated animate__backInLeft">{category}</h3>
             {/* se ocupa un perador logico && para evitar el ternario
             ya que si es false en el teernario hay que null y con el &&
             solo no ponemos nada si es false */}
-            {loading && <p>loading</p> }
+            {loading && <p className="animate__animated animate__flash">loading</p> }
             <div className="card-grid">
                 {
                     images.map(img =>(
