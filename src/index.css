@@ -53,3 +53,11 @@ ol{
     justify-content: center;
   }   
 }
+
+@media screen and (max-width:800px){
+  .card-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+  }   
+}
