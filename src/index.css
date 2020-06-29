@@ -3,7 +3,9 @@
 }
 
 body{
-  padding: 60px;
+  background: #000000;
+  color: #ffffff;
+  /* padding: 50px; */
 }
 
 input{
@@ -13,9 +15,11 @@ input{
 }
 
 .card-grid{
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
 }
 
 .card{
@@ -32,6 +36,20 @@ input{
 } 
 
 .card img{
+  display: block;
+  margin: auto;
   max-height: 250px;
   max-width: 300px;
+}
+
+ol{
+  padding: 0%;
+}
+
+@media screen and (max-width:600px){
+  .card-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+  }   
 }
